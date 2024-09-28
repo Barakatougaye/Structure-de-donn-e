@@ -46,3 +46,30 @@ ensemble.remove(7)
 print("Ensemble après suppression :", ensemble)
 
 
+
+#Question 3
+d1 = {'a': 100, 'b': 200, 'c': 300}
+d2 = {'a': 300, 'b': 200, 'd': 400}
+result = {}
+
+for i in d1:
+    result[i] = d1[i] 
+
+for i in d2:
+    if i in result:
+        result[i] += d2[i]  
+    else:
+        result[i] = d2[i]   
+
+print(result)
+
+#Question 4
+n = 8  
+
+result = {}
+
+
+for i in range(1, n + 1):
+    result[i] = i * i 
+
+print(result)
